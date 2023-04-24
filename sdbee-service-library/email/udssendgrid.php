@@ -259,13 +259,13 @@ if ( $argv[0] && strpos( $argv[0], "udssendgrid.php") !== false)
         'from' => [ 'name'=>"SD bee", 'email'=>"contact@sd-bee.com"],
         'subject' =>"News News",
         'body' => $msg,
-        'contactList' => "e8cfafdc-6a42-42d9-b144-de8e640cf328" // "TestList"
+        'contactList' => "<Test List>"
     ];
     //$result =  $sg->SetupCampaign( $data);
     //if ( $result) echo "Test $test:OK {$sg->lastResponseRaw[ 'id']}\n"; else echo "Test $test:KO {$sg->lastResponse}\n";
     $test = "3 - Stats";
     $data = [
-        'draftId' => "0802b20c-a6c4-11ec-a4f8-1e5333259b03"
+        'draftId' => "<draft id>"
     ];
     $result =  $sg->getStats( $data);
     $result &= ( LF_count( $sg->lastResponseRaw[ 'values'])>0);
