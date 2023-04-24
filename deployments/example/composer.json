@@ -1,0 +1,6 @@
+{
+    "requires": {
+        "dum\/mailphp": "*",
+        "mailjet\/mailjet-apiv3-php": "*"
+    }
+}

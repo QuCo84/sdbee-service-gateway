@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - email_mailjet_service
+  - --region=europe-west1
+  - --source=.
+  - --trigger-http
+  - --runtime=php81
